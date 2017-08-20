@@ -16650,7 +16650,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap__ = __webpack_require__("../node_modules/bootstrap/dist/js/bootstrap.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap__);
 
+__webpack_require__("./assets/images/favicon.png");
 __webpack_require__("./assets/css/app.scss");
+var imdImage = __webpack_require__("./assets/images/imd-profile-transparent.png");
 
 
 
@@ -16660,7 +16662,7 @@ if (path === '/') {
     var main = document.getElementById('app');
 
     var image = document.createElement('img');
-    image.setAttribute('src', 'assets/images/imd-profile-transparent.png');
+    image.setAttribute('src', imdImage);
     main.appendChild(image);
 
     main.innerHTML += 'Howdy. You\'re on the home page. <a href="/about">Click here</a> to view the about page.';
@@ -16682,6 +16684,20 @@ if (path === '/about') {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./assets/images/favicon.png":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACa0lEQVRYhcWXv2tUQRDHPx5HkCDHcRxHSCFXpLAIKdMGRNAmh0VsxMJKDpGUIf9BsLpCgohYWImkEDmChVhZWIQgFpJCUkmKI0TUcASRcBY7683b7O7blxfNwBfuePPjuzOzu7NwznKhhG0NqMvv78DP8nTi0gS6wCawD4wc7Mu3ruieaeAeMPQEDWEoNqWIVIAOMFCOjxWRl8BhDpGB+KichsCqBLSBXwHPgftAH3gIXAU2gHsREsfiK1kqYmAd7ALz8q2q9CYwTfgEOIgQsFglMRMdtfJtoBXQqwN7DtGbmEYMZaKTF7zJuOa7keAAU8AXRXYHkxW7W9Y9JAbkNGZPKV/LY4tJ6SymN94IASstTHlcEr2QsybZrdYHLiWQAGgAt9X/i0Abswi3P4YEstD1sH2USEBLHbiBKY0tj4uuVdZduehxtnUKAlVgweNfiy+W93hdKhh8Gnjr8eM7tjNSCyhuRFbhShWzE1KP65o2bkcUVxJJXAGOChBopxIYAcvApBPQ7vk54DLwq0Dwkdj8lVAJLLYwnWszMQl8Vit+DHwqSCBTAvA3ocYecEd0W863I/JvxmgTQvgM1ziQLNQk6A5pXe9i0wbVzdX3sXKkAbzA1P46cIuTvZEi3ljuURzDb+AHcBfTTE8T7UZEjmLIXkapeMf40nmN2TEfgK8B/eBlZLMw8BjlYRt4hilHRTCBuUu0Xu51DNmBpAg+eny1GJ+OSQMJnBzJUvHA8TOPGWrs9+SRzIoeSlMwI3YzmJ7QA22hodSKbyyPYQ1475AuNZZbObeHiY/ImT/Nyj5OG/L7G//hcfpP5A/nOazXYxLs5QAAAABJRU5ErkJggg=="
+
+/***/ }),
+
+/***/ "./assets/images/imd-profile-transparent.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "assets/imd-profile-transparent.png";
 
 /***/ }),
 

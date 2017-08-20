@@ -33,38 +33,19 @@ module.exports = {
 				],
 				include: srcFolder
 			},
-			// {
-			// 	test: /\.scss$/,
-			// 	exclude: /node_modules/,
-			// 	use: [
-			// 		'style-loader',
-			// 		'css-loader',
-			// 		{
-			// 			loader: 'postcss-loader',
-			// 			options: {
-			// 				plugins: () => [require('autoprefixer')({ browsers: [ 'last 3 version', 'ie >= 10' ] })]
-			// 			}
-			// 		},
-			// 		'sass-loader'
-			// 	]
-			// },
-			// {
-			//   test: /\.sass$/,
-			//   loader: ExtractTextPlugin.extract({ use: ['css-loader', 'sass-loader'] }),
-			// },
 			{
 				test: /\.(sass|scss)$/,
 				use: ExtractTextPlugin.extract({ use: ['css-loader', 'sass-loader'] }),
 			},
-			// {
-			// 	test: /\.(eot?.+|svg?.+|ttf?.+|otf?.+|woff?.+|woff2?.+)$/,
-			// 	use: 'file-loader?name=assets/[name].[ext]'
-			// },
-			// {
-			// 	test: /\.(jpg|jpeg|png|gif|ico|svg)$/,
-			// 	use: [ 'url-loader?limit=10240&name=assets/[name].[ext]' ],
-			// 	include: path.resolve(srcFolder, 'assets')
-			// }
+			{
+				test: /\.(eot?.+|svg?.+|ttf?.+|otf?.+|woff?.+|woff2?.+)$/,
+				use: 'file-loader?name=assets/[name].[ext]'
+			},
+			{
+				test: /\.(jpg|jpeg|png|gif|ico|svg)$/,
+				use: [ 'url-loader?limit=10240&name=assets/[name].[ext]' ],
+				include: srcFolder + '/assets'
+			}
 		]
 	},
 	plugins: [
@@ -76,7 +57,8 @@ module.exports = {
 	    new HtmlWebpackPlugin({
 		    template: srcFolder + '/index.html',
 		    path: distFolder,
-		    filename: 'index.html'
+		    filename: 'index.html',
+		    favicon: srcFolder + '/assets/images/favicon.png'
 		}),
 	    new webpack.ProvidePlugin({
 	        $: 'jquery',

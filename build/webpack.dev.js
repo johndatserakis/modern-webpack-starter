@@ -48,23 +48,15 @@ module.exports = {
 					'sass-loader'
 				]
 			},
-			// {
-			//   test: /\.sass$/,
-			//   loader: ExtractTextPlugin.extract({ use: ['css-loader', 'sass-loader'] }),
-			// },
-			// {
-			// 	test: /\.(sass|scss)$/,
-			// 	use: ExtractTextPlugin.extract({ use: ['css-loader', 'sass-loader'] }),
-			// },
-			// {
-			// 	test: /\.(eot?.+|svg?.+|ttf?.+|otf?.+|woff?.+|woff2?.+)$/,
-			// 	use: 'file-loader?name=assets/[name].[ext]'
-			// },
-			// {
-			// 	test: /\.(jpg|jpeg|png|gif|ico|svg)$/,
-			// 	use: [ 'url-loader?limit=10240&name=assets/[name].[ext]' ],
-			// 	include: path.resolve(srcFolder, 'assets')
-			// }
+			{
+				test: /\.(eot?.+|svg?.+|ttf?.+|otf?.+|woff?.+|woff2?.+)$/,
+				use: 'file-loader?name=assets/[name].[ext]'
+			},
+			{
+				test: /\.(jpg|jpeg|png|gif|ico|svg)$/,
+				use: [ 'url-loader?limit=10240&name=assets/[name].[ext]' ],
+				include: srcFolder + '/assets'
+			}
 		]
 	},
 	plugins: [
