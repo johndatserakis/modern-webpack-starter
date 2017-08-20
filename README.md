@@ -1,4 +1,4 @@
-<p align="center"><a href="https://modern-webpack-starter.innermonkdesign.com/" target="_blank"><img width="200" src="./src/static/koa-vue-notes-icon.png"></a></p>
+<p align="center"><a href="https://modern-webpack-starter.innermonkdesign.com/" target="_blank"><img width="200" src="./src/assets/images/mws-profile.png"></a></p>
 
 # modern-webpack-starter
 A modern JavaScript frontend using Webpack built from scratch. You can view the demo [here](https://modern-webpack-starter.innermonkdesign.com/).
