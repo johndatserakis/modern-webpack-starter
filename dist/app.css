@@ -6063,7 +6063,14 @@ h1, h2, h3, h4, h5, h6 {
 .label, label {
   font-weight: 400 !important; }
 
-body {
-  background: red; }
+.app {
+  padding: 100px 0 150px;
+  background: #eee;
+  text-align: center; }
+  .app img {
+    max-height: 200px;
+    margin: 0 auto 40px;
+    max-width: 100%;
+    display: block; }
 
 /*# sourceMappingURL=app.map*/

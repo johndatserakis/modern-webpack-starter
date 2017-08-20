@@ -16649,15 +16649,8 @@ module.exports = g;
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap__ = __webpack_require__("../node_modules/bootstrap/dist/js/bootstrap.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap__);
-// var msg = require("./contents.js");
-// document.write(msg);
 
 __webpack_require__("./assets/css/app.scss");
-
-// const env = process.env.NODE_ENV || 'development'
-// if (env !== 'production') {
-//     require("./assets/css/app.scss");
-// }
 
 
 
@@ -16665,12 +16658,22 @@ var path = window.location.pathname;
 
 if (path === '/') {
     var main = document.getElementById('app');
-    main.innerHTML = 'Howdy. You\'re on the home page';
+
+    var image = document.createElement('img');
+    image.setAttribute('src', 'assets/images/imd-profile-transparent.png');
+    main.appendChild(image);
+
+    main.innerHTML += 'Howdy. You\'re on the home page. <a href="/about">Click here</a> to view the about page.';
 }
 
 if (path === '/about') {
     var _main = document.getElementById('app');
-    _main.innerHTML = 'Howdy. You\'re on the about page';
+
+    var _image = document.createElement('img');
+    _image.setAttribute('src', 'assets/images/imd-profile-transparent.png');
+    _main.appendChild(_image);
+
+    _main.innerHTML += 'Howdy. You\'re on the about page. <a href="/">Click here</a> to view the home page.';
 }
 
 /***/ }),

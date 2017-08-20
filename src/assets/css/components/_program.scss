@@ -1,3 +1,12 @@
-body {
-    background: red;
+.app {
+    padding: 100px 0 150px;
+    background: $light-grey;
+    text-align: center;
+
+    img {
+        max-height: 200px;
+        margin: 0 auto 40px;
+        max-width: 100%;
+        display: block;
+    }
 }
