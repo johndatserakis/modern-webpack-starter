@@ -1,6 +1,6 @@
 {
     "name": "modern-webpack-starter",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "A modern JavaScript frontend using Webpack built from scratch.",
     "main": "index.js",
     "scripts": {
