@@ -1,2 +1,4 @@
 # webpack-vue-from-scratch
-A Vue 2.4 project using Webpack built from scratch.
+A modern JavaScript frontend using Webpack built from scratch.
+
+### Work in progress
