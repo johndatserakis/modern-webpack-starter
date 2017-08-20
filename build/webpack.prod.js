@@ -3,6 +3,8 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const baseFolder = path.resolve(__dirname, '..', '')
 const srcFolder = path.resolve(__dirname, '..', './src')
 const distFolder = path.resolve(__dirname, '..', './dist')
@@ -49,9 +51,13 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new UglifyJSPlugin(),
 		new ExtractTextPlugin({
 			filename: 'app.css',
 			allChunks: true,
+		}),
+		new OptimizeCssAssetsPlugin({
+			cssProcessorOptions: { discardComments: {removeAll: true } },
 		}),
 		new webpack.NamedModulesPlugin(),
 	    new HtmlWebpackPlugin({
@@ -65,6 +71,6 @@ module.exports = {
 	        jQuery: 'jquery',
 	        'window.jQuery': 'jquery',
 	        Popper: ['popper.js', 'default']
-	    })
+	    }),
     ],
 }
