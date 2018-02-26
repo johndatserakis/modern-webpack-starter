@@ -1,4 +1,4 @@
-<p align="center"><a href="https://modern-webpack-starter.innermonkdesign.com/" target="_blank"><img width="200" src="./src/assets/images/mws-profile.png"></a></p>
+<p align="center"><a href="https://johndatserakis.github.io/modern-webpack-starter/" target="_blank"><img width="200" src="./src/assets/images/mws-profile.png"></a></p>
 
 <p align="center">
   <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Issues"></a>
@@ -7,7 +7,7 @@
 </p>
 
 # modern-webpack-starter
-A modern JavaScript frontend using [Webpack](https://github.com/webpack/webpack) built from scratch. You can view the demo [here](https://modern-webpack-starter.innermonkdesign.com/).
+A modern JavaScript frontend using [Webpack](https://github.com/webpack/webpack) built from scratch. You can view the demo [here](https://johndatserakis.github.io/modern-webpack-starter/).
 
 ## Features
 - Webpack 3.5
