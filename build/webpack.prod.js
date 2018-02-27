@@ -16,7 +16,7 @@ module.exports = {
 	output: {
 		filename: 'app.js',
 		path: distFolder,
-		publicPath: '',
+		publicPath: './',
 		sourceMapFilename: 'app.map'
 	},
 	devServer: {
