@@ -1,11 +1,12 @@
-
 require('./assets/images/favicon.png')
 require('./assets/css/app.scss');
 const imdImage = require('./assets/images/mws-profile.png')
 
 import 'bootstrap';
 
+//Grabbing the path, removing the /modern-webpack-starter text from the pathname
 let path = window.location.pathname
+path = path.replace('/modern-webpack-starter', '')
 
 if (path === '/') {
     let main = document.getElementById('app')
