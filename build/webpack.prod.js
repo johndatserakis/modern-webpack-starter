@@ -7,7 +7,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const baseFolder = path.resolve(__dirname, '..', '')
 const srcFolder = path.resolve(__dirname, '..', './src')
-const distFolder = path.resolve(__dirname, '..', './docs') //making this /docs for github pages
+const distFolder = path.resolve(__dirname, '..', './dist') //making this /docs for github pages
 
 module.exports = {
 	context: srcFolder,

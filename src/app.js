@@ -4,15 +4,7 @@ const imdImage = require('./assets/images/mws-profile.png')
 
 import 'bootstrap';
 
-let environment = 'development'
-let base = ''
 let path = window.location.pathname
-if (path.includes('/modern-webpack-starter')) {
-    environment = 'production'
-}
-if (environment === 'production') {
-    base = '/modern-webpack-starter'
-}
 
 let main = document.getElementById('app')
 let image = document.createElement('img')
@@ -20,11 +12,11 @@ image.setAttribute('src', imdImage)
 main.appendChild(image)
 
 if (path === (base + '/')) {
-    main.innerHTML += 'Howdy. You\'re on the HOME page. <a href="' + base + '/about">Click here</a> to view the about page.'
+    main.innerHTML += 'Howdy. You\'re on the HOME page. <a href="/about">Click here</a> to view the about page.'
 }
 
 if (path === (base + '/about')) {
-    main.innerHTML += 'Howdy. You\'re on the ABOUT page. <a href="' + base + '/">Click here</a> to view the home page.'
+    main.innerHTML += 'Howdy. You\'re on the ABOUT page. <a href="/">Click here</a> to view the home page.'
 }
 
 
