@@ -1,6 +1,6 @@
-.app {
+#app {
     padding: 100px 0 150px;
-    background: $light-grey;
+    background: #eee;
     text-align: center;
 
     img {
@@ -8,5 +8,18 @@
         margin: 0 auto 40px;
         max-width: 100%;
         display: block;
+    }
+
+    .main-button {
+        background: #71D54F;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+
+        &:hover {
+            background: #5DBE3D;
+            cursor: pointer;
+        }
     }
 }
