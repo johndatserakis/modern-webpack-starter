@@ -1,0 +1,17 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "indent": [
+          2,
+          4
+        ],
+        "semi": [1, "never"],
+        "no-alert": 0,
+        "arrow-body-style": [0],
+        "import/no-unresolved": "off"
+    },
+    "env": {
+        "browser": true,
+        "node": true
+    }
+}

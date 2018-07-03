@@ -17,6 +17,8 @@ A modern JavaScript starter using [Webpack 4](https://github.com/webpack/webpack
 - SASS Handling
 - Uglifying, Minimizing
 - html-webpack-plugin, mini-css-extract-plugin, optimize-css-assets-webpack-plugin
+- `@` Alias Support For Easy File Imports
+- ESLint
 - And more...
 
 ### Installing / Getting started
@@ -25,7 +27,7 @@ A modern JavaScript starter using [Webpack 4](https://github.com/webpack/webpack
 # install dependencies
 npm install
 
-# serve using webpack-dev-server with hot reload
+# serve using webpack-dev-server with hot reload at http://localhost:8080/
 npm run watch
 
 # build for production

@@ -19,12 +19,18 @@ const config = {
       chunks: 'all',
     },
   },
+  devServer: {
+    historyApiFallback: true
+  },
   devtool: (env === 'development') ? 'cheap-module-eval-source-map' : undefined,
   module: {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader',
+        use: [
+          'babel-loader',
+          'eslint-loader'
+        ],
         include: [path.join(__dirname, 'src')],
       },
       {
@@ -64,6 +70,12 @@ const config = {
       chunkFilename: (env !== 'production') ? '[id].css' : '[id].[hash].css',
     })
   ],
+  resolve: {
+      extensions: ['.js', '.json'],
+      alias: {
+        '@': path.join(__dirname, 'src')
+      }
+  }
 };
 
 if (env === 'production') {
