@@ -89,8 +89,7 @@ const config = {
             chunkFilename: (env !== 'production') ? '[id].css' : '[id].[hash].css',
         }),
         new CopyWebpackPlugin([
-            { from: path.resolve(__dirname, 'src', 'assets', 'images', 'favicon.png'), to: './favicon.png' },
-            // { from: './src/assets/images/main/social.png', to: './social.png' },
+            { from: path.resolve(__dirname, 'src', 'assets', 'images', 'favicon.png'), to: './favicon.png' }
         ])
     ],
     resolve: {
