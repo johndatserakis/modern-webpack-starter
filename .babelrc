@@ -1,15 +1,9 @@
 {
   "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "modules": false
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"]
       }
-    ]
-  ],
-  "plugins": [
-    "@babel/plugin-syntax-dynamic-import",
-    "@babel/plugin-transform-runtime",
-    "@babel/plugin-proposal-object-rest-spread"
+    }]
   ]
 }

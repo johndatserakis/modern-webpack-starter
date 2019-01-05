@@ -1,14 +1,11 @@
-// Load favicon
-import '@/assets/images/favicon.png'
-
 // Load App's css (scss)
 import '@/assets/css/app.scss'
 
+// Import bootstrap js
+import 'bootstrap/dist/js/bootstrap.bundle.min'
+
 // Load project image
 import projectImage from '@/assets/images/mws-profile.png'
-
-// Import bootstrap
-import 'bootstrap'
 
 // Let's append the image to the page
 const main = document.getElementById('app')

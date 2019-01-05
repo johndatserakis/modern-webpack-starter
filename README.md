@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Issues"></a>
-  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjohndatserakis%2Fmodern-webpack-starter&text=Check%20out%20modern-webpack-starter%20on%20GitHub&via=innermonkdesign">
+  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fjohndatserakis%2Fmodern-webpack-starter&text=Check%20out%20modern-webpack-starter%20on%20GitHub&via=johndatserakis">
   <img src="https://img.shields.io/twitter/url/https/github.com/johndatserakis/modern-webpack-starter.svg?style=social" alt="Tweet"></a>
 </p>
 
@@ -10,7 +10,7 @@
 A modern JavaScript starter using [Webpack 4](https://github.com/webpack/webpack). Made in a simple way - good for learning or starting a new project without having to rollout cli-auto-builders. You can view the demo [here](http://modern-webpack-starter.innermonkdesign.com/).
 
 ### Features
-- Webpack 4.11.0
+- Webpack 4.14.0
 - Webpack-Dev-Server
 - Bootstrap 4.1
 - Babel
