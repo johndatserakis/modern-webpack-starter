@@ -55,10 +55,10 @@ const config = {
                 use: ['eslint-loader']
             },
             {
-                test: /\.scss$/,
+                test: /\.(scss|css)$/,
                 use: [
-                    'style-loader',
-                    MiniCssExtractPlugin.loader,
+                    // For hot reload in dev https://github.com/webpack-contrib/mini-css-extract-plugin/issues/34
+                    (env === 'development') ? 'style-loader' : MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader'
                 ],
@@ -85,8 +85,8 @@ const config = {
             }
         }),
         new MiniCssExtractPlugin({
-            filename: (env !== 'production') ? '[name].css' : '[name].[hash].css',
-            chunkFilename: (env !== 'production') ? '[id].css' : '[id].[hash].css',
+            filename: (env === 'development') ? '[name].css' : '[name].[hash].css',
+            chunkFilename: (env === 'development') ? '[id].css' : '[id].[hash].css',
         }),
         new CopyWebpackPlugin([
             { from: path.resolve(__dirname, 'src', 'assets', 'images', 'favicon.png'), to: './favicon.png' }

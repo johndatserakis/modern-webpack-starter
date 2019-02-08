@@ -1,6 +1,6 @@
 {
     "name": "modern-webpack-starter",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "A modern JavaScript starter using Webpack 4. Made in a simple way - good for learning or starting a new project without having to rollout cli-auto-builders.",
     "author": "John Datserakis",
     "license": "MIT",
