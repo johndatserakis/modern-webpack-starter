@@ -9,6 +9,8 @@
 # modern-webpack-starter
 A modern JavaScript starter using [Webpack 4](https://github.com/webpack/webpack). Made in a simple way - good for learning or starting a new project without having to rollout cli-auto-builders. You can view the demo [here](http://modern-webpack-starter.innermonkdesign.com/).
 
+Looking to use Vue with this template? See [here](https://github.com/johndatserakis/modern-webpack-starter-vue) for the Vue repo flavor.
+
 ### Features
 - Webpack 4.14.0
 - Webpack-Dev-Server
